@@ -5,7 +5,7 @@ require_once 'custom/objects.php';
 
 function mytheme_resources(){
 		wp_enqueue_style('normalize', get_template_directory_uri().'/assets/normalize.css', false,'1.0','all');
-		wp_enqueue_style('bootstrap.min.css', get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css', false,'1.0','all');
+		wp_enqueue_style('bootstrap.min.css', get_template_directory_uri().'/assets/bootstrap/css/bootstrap.css', false,'1.0','all');
 		wp_enqueue_style('style', get_stylesheet_uri());
 }
 

@@ -46,7 +46,7 @@
     
     <!-- Inlcude jQuery and Bootstrap START -->
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/jquery.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/bootstrap/js/bootstrap.js"></script>
 	<!-- Inlcude jQuery and Bootstrap END -->
 
 	<!-- Use HTML5shiv.js and respond.js Fix if browser is IE9 or below -->
@@ -63,15 +63,6 @@
     <!-- Theme JavaScript -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/pccowboy.js"></script>
     
-    
-     <!-- Contact Form JavaScript 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jqBootstrapValidation.js"></script> 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/contact_me.js"></script>
-    
-     -->
-
-    <!-- Theme JavaScript -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/freelancer.min.js"></script>
 
 </body>
 
