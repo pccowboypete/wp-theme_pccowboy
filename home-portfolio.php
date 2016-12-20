@@ -1,6 +1,6 @@
  <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
+    <section id="portfolio" >
+        <div class="container"  style="opacity : 0;">>
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-title">Portfolio</h2>

@@ -28,6 +28,7 @@
 </head>
 
 <body id="page-top" <?php body_class('index'); ?>>
+    <div id="main-container" style="display : none;">
     
 	<!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="top-bar">
@@ -38,6 +39,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="<?php echo home_url(); ?>#page-top">
                     <span class="site-caption">Welcome to <span class="site-name"><?php bloginfo('name'); ?>!</span></span>
+                    <span class="jdebug"></span>
                 </a>
             </div>
 
