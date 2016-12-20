@@ -34,12 +34,12 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="top-bar">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="<?php echo home_url(); ?>#page-top">
                     <span class="site-caption">Welcome to <span class="site-name"><?php bloginfo('name'); ?>!</span></span>
-                    <span class="jdebug"></span>
+                    
                 </a>
             </div>
 

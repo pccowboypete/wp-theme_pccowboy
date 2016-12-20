@@ -30,14 +30,24 @@ function fadeInSection(selector){
 			
 		    //if enough top part of the section is visible
 			//and if enough bottom part of the section is visible
-		    if( top_of_object < (bottom_of_window - 350)){
+		    if( top_of_object < (bottom_of_window - 350) && !((top_of_window + 300) > bottom_of_object) ){
 		    	//if the opacity is 0
 		    	if ($(this).children(".container").css("opacity")==0){
 		    		//show the section
 		        	$(this).children(".container").fadeTo(600,1);
 		        }
 		    	
-		    }	   
+		    }
+		    //else if 
+		    else{
+		    	
+		    	//if the opacity is 1
+		    	if ($(this).children(".container").css("opacity")==1){
+		    		//hide the section
+		    		$(this).children(".container").fadeTo(500,0);
+		    	}
+		    }
+	   
 	   }
 	 
 	 );
