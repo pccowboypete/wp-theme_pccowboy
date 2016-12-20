@@ -11,10 +11,13 @@
  	content="<?php single_post_title(); single_cat_title(); echo ', '; XWP_Util::get_the_tags(); ?>">
 	<meta name="robots" content="index, follow">
     
+    <!-- Page Icon -->
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
     <!-- Custom Fonts -->
     <link href="<?php echo get_template_directory_uri(); ?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sriracha" rel="stylesheet"> <!-- font 2 and 3 -->
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> <!-- font 4 -->
 	
