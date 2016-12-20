@@ -1,0 +1,597 @@
+/*
+Theme Name: PcCowboy
+Theme URI:
+Author: PcCowboy
+Author URI: http://pccowboy.x10.bz
+Description:
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/**
+ * END Media queries mixins
+ *
+ *
+ */
+/** #################
+ * 1.0 - Body
+ */
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 20px;
+}
+
+p.small {
+  font-size: 16px;
+}
+
+/** #################
+ *  Header
+ */
+header {
+  padding: 100px 0 100px 0;
+  text-align: center;
+  background: #222;
+  color: white;
+  background-image: url("imgs/head.jpg");
+  padding: 330px 0px 40px 0px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0 15px 0;
+  }
+}
+
+header .section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  header .section-title {
+    font-size: 30px;
+  }
+}
+
+header hr {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  max-width: 400px;
+  margin: 10px auto 10px;
+}
+
+@media (max-width: 768px) {
+  header hr {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 80px 0px 15px 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+header img.site-header-logo {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+@media (max-width: 768px) {
+  header img.site-header-logo {
+    width: 140px;
+    height: auto;
+    margin: 0 auto 5px;
+  }
+}
+
+header .intro-text .skills {
+  font-family: "Sriracha", cursive;
+  font-size: 30px;
+  font-weight: 300;
+  text-shadow: 0px 0px 40px #000;
+}
+
+@media (max-width: 768px) {
+  header .intro-text .skills {
+    font-size: 20px;
+  }
+}
+
+header .site-header-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+/** #################
+  * 3.0 - Fixed Top Bar
+  */
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+  outline: none;
+}
+
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+}
+
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-custom .navbar-brand .site-caption {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar-custom .navbar-brand .site-caption {
+    font-size: 20px;
+  }
+}
+
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+
+.navbar-custom a {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: #555;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+  outline: none;
+}
+
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+/**
+ * END Fixed Top Bar
+ *
+ *
+ *
+ *
+ */
+section#portfolio {
+  padding: 100px 0 100px 0;
+  background-color: #010101;
+}
+
+@media (max-width: 768px) {
+  section#portfolio {
+    padding: 15px 0 15px 0;
+  }
+}
+
+section#portfolio .section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  section#portfolio .section-title {
+    font-size: 30px;
+  }
+}
+
+section#portfolio hr {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  max-width: 400px;
+  margin: 10px auto 10px;
+}
+
+@media (max-width: 768px) {
+  section#portfolio hr {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  section#portfolio {
+    margin: 0 0 30px;
+  }
+}
+
+section#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+
+section#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  section#portfolio .portfolio-item .portfolio-link {
+    max-width: 250px;
+  }
+}
+
+section#portfolio .portfolio-item .portfolio-link:hover {
+  text-decoration: none;
+}
+
+section#portfolio .section-title {
+  color: #fefefe;
+  margin: 0;
+}
+
+section#portfolio .portfolio-item .portfolio-link h3 {
+  color: #fefefe;
+  font-family: "Sriracha", cursive;
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  section#portfolio .portfolio-item .portfolio-link h3 {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+section#portfolio hr {
+  color: #fefefe;
+}
+
+/** #################
+ * 13.0 - About
+ */
+section#about {
+  padding: 100px 0 100px 0;
+}
+
+@media (max-width: 768px) {
+  section#about {
+    padding: 15px 0 15px 0;
+  }
+}
+
+section#about .section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  section#about .section-title {
+    font-size: 30px;
+  }
+}
+
+section#about hr {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  max-width: 400px;
+  margin: 10px auto 10px;
+}
+
+@media (max-width: 768px) {
+  section#about hr {
+    max-width: 200px;
+  }
+}
+
+section#about .section-title, section#about hr {
+  color: #010101;
+}
+
+.xxAbout p {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .xxAbout p {
+    font-size: 18px;
+  }
+}
+
+.xxAbout .xxAbout-wrapper {
+  padding: 20px;
+}
+
+.xxAbout .xxParagraph-intro {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-family: 'Sahitya', serif;
+  font-size: 24px;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .xxAbout .xxParagraph-intro {
+    font-size: 18px;
+  }
+}
+
+.xxAbout .xxAboutPic {
+  width: 170px;
+  float: left;
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
+  /* ###c. Border Shadow compatibility fixes### */
+  -webkit-box-shadow: 0px 0px 8px #000000;
+  /* Safari, Chrome and browsers using the Webkit engine */
+  -moz-box-shadow: 0px 0px 8px #000000;
+  /* Firefox and other browsers using Mozilla's browser engine */
+  -o-box-shadow: 0px 0px 8px #000000;
+  /* Opera */
+  -khtml-box-shadow: 0px 0px 8px #000000;
+  /* Konqueror browser */
+  box-shadow: 0px 0px 8px #000000;
+  /* Default CSS */
+  /* For IE, not recommended, better none for IE users */
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=15);
+  /* but only certain sides will have shadow
+	* *145 - bottom and right
+	*/
+}
+
+@media (max-width: 768px) {
+  .xxAbout .xxAboutPic {
+    width: 110px;
+  }
+}
+
+.xxAbout .xxAbout-name {
+  font-family: 'Sriracha', cursive;
+}
+
+.xxAbout .xxAbout-alias {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: bold;
+}
+
+.xxAbout .xxAbout-table {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-size: 20px;
+  border-collapse: collapse;
+  border-style: hidden;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .xxAbout .xxAbout-table {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+.xxAbout .xxAbout-table thead,
+.xxAbout .xxAbout-table tr td,
+.xxAbout .xxAbout-table tr th {
+  /* set table border styling */
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+.xxAbout .xxAbout-table th {
+  text-align: center;
+}
+
+/**
+ * END 13.0 - About
+ *
+ *
+ *
+ *
+ */
+section#contact {
+  padding: 100px 0 100px 0;
+  background-color: #010101;
+}
+
+@media (max-width: 768px) {
+  section#contact {
+    padding: 15px 0 15px 0;
+  }
+}
+
+section#contact .section-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+  margin: 0;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  section#contact .section-title {
+    font-size: 30px;
+  }
+}
+
+section#contact hr {
+  padding: 0;
+  border: none;
+  border-top: solid 5px;
+  max-width: 400px;
+  margin: 10px auto 10px;
+}
+
+@media (max-width: 768px) {
+  section#contact hr {
+    max-width: 200px;
+  }
+}
+
+section#contact .section-title, section#contact hr {
+  color: #fefefe;
+}
+
+section#contact input,
+section#contact textarea {
+  color: #010101;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  section#contact input,
+  section#contact textarea {
+    font-size: 14px;
+  }
+}
+
+section#contact input {
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  section#contact input {
+    height: 28px;
+  }
+}
+
+section#contact label {
+  color: #fefefe;
+}
+
+footer {
+  color: #010101;
+}
+
+footer h3 {
+  margin-bottom: 30px;
+  font-family: "Lobster", cursive;
+}
+
+@media (max-width: 768px) {
+  footer h3 {
+    margin-bottom: 8px;
+  }
+}
+
+footer p {
+  font-family: "Sriracha", cursive;
+}
+
+footer .footer-above {
+  padding-top: 30px;
+  background-color: #fefefe;
+}
+
+@media (max-width: 768px) {
+  footer .footer-above {
+    padding-top: 10px;
+  }
+}
+
+footer .footer-col {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  footer .footer-col {
+    margin-bottom: 15px;
+  }
+}
+
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
+  font-family: "Lobster", cursive;
+  font-size: 20px;
+  color: #fefefe;
+}
+
+@media (max-width: 768px) {
+  footer .footer-below {
+    margin-bottom: 10px;
+  }
+}
+
+footer .btn-outline {
+  color: #010101;
+  font-size: 20px;
+  border: solid 2px #010101;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+footer .btn-outline:hover,
+footer .btn-outline:focus,
+footer .btn-outline:active,
+footer .btn-outline.active {
+  color: #0048BA;
+  background: white;
+  border: solid 2px #010101;
+}

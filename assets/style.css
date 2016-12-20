@@ -1,0 +1,70 @@
+body {
+  font-family: arial, sans-serif;
+  
+  	/*###a. Fixed Background image compatibility fixes*/
+  	background-color : #333;
+	background-image: url('imgs/bg.jpg');
+	
+	/* background position */
+	background-position: center center;
+	
+	/* background attachment */
+	-webkit-background-attachment: fixed; /* Safari, Chrome and browsers using the Webkit engine */
+	-moz-background-attachment: fixed; /* Firefox and other browsers using Mozilla's browser engine */
+	-o-background-attachment: fixed; /* Opera */
+	-khtml-background-attachment: fixed; /*Konqueror browser*/
+	background-attachment: fixed; /*Default CSS*/
+	
+	/* background size */
+	-webkit-background-size : cover; /* Safari, Chrome and browsers using the Webkit engine */
+	-moz-background-size : cover; /* Firefox and other browsers using Mozilla's browser engine */
+	-o-background-size : cover; /* Opera */
+	-khtml-background-size : cover; /*Konqueror browser*/
+	background-size : cover; /* Default CSS */
+}
+
+@media screen and (max-width: 365px) { 
+	body{
+		background-image : none;
+		padding-right : 5px;
+		padding-left : 5px;
+	}
+}
+
+
+
+
+
+/* MAIN CONTAINER STYLING */
+#xxMain-container{
+	
+	padding : 10px;
+	margin: 0 auto;
+	margin-top : 10px;
+	border : 1px solid #111;
+	overflow : hidden;
+	
+	
+	background-color : #fefefe;
+	
+	/* ###b. Border Radius compatibility fixes### */
+	-webkit-border-radius: 10px; /* Safari, Chrome and browsers using the Webkit engine */
+	-moz-border-radius: 10px; /* Firefox and other browsers using Mozilla's browser engine */
+	-o-border-radius: 10px; /* Opera */
+	-khtml-border-radius: 10px; /* Konqueror browser */ 
+	border-radius: 10px; /* default CSS */
+	
+	
+	/* ###c. Border Shadow compatibility fixes### */
+	-webkit-box-shadow: 0px 0px 15px #fff; /* Safari, Chrome and browsers using the Webkit engine */
+	-moz-box-shadow: 0px 0px 15px #fff; /* Firefox and other browsers using Mozilla's browser engine */
+	-o-box-shadow: 0px 0px 15px #fff; /* Opera */
+	-khtml-box-shadow: 0px 0px 15px #fff; /* Konqueror browser */
+	box-shadow: 0px 0px 15px #fff; /* Default CSS */	
+}/* END MAIN CONTAINER STYLING */
+
+
+
+.xxSite-header-links{
+	min-width : 150px;
+}
