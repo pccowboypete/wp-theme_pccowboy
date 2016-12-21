@@ -12,7 +12,7 @@ function collapseNavbar() {
 
 // jQuery for fade effect of page on load
 function fadeInPage() {
-	$("#main-container").fadeTo(500, 1);
+	$("#main-container").fadeTo(1000, 1);
 }
 
 
