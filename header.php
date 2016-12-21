@@ -25,7 +25,7 @@
     <title><?php bloginfo('name'); ?><?php echo ' - ';single_post_title(); single_cat_title(); ?></title>
 	<?php wp_head(); ?>
 
-</head>
+</head> 
 
 <body id="page-top" <?php body_class('index'); ?>>
     <div id="main-container" style="display : none;">
@@ -64,7 +64,7 @@
 	
 	
 
-    <!-- Header -->
+    <!-- Header ko -->
     <header>
         <div class="container">
             <div class="row">
