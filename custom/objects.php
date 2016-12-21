@@ -4,6 +4,18 @@ class XWP_Menu{
 	protected $title = "";
 	protected  $permalink = "";
 	
+	function __get($propertyName){
+		return $this->$propertyName;
+	}
+
+	function __set($propertyName, $value){
+		$this->$propertyName = $value;
+	}
+	
+	function get_anchor(){
+		return "#" . $this->title;
+	}
+	
 }
 
 
