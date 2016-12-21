@@ -64,7 +64,7 @@
 	
 	
 
-    <!-- Header ko -->
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="row">
