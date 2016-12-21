@@ -39,7 +39,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="<?php echo home_url(); ?>#page-top">
                     <span class="site-caption">Welcome to <span class="site-name"><?php bloginfo('name'); ?>!</span></span>
-                    
+                    <br><span class="debug"></span>
                 </a>
             </div>
 
@@ -72,7 +72,8 @@
                     <img class="img-responsive site-header-logo" src="<?php echo get_template_directory_uri(); ?>/imgs/pccowboy.png" alt="PcCowboy - Peter Nanayon">
                     <div class="intro-text">
                          
-                        <span class="skills"><?php bloginfo('description'); ?></span>
+                        <span class="skills"><?php bloginfo('description'); ?></span> 
+                        
                     </div>
                 </div>
             </div>

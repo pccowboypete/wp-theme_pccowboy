@@ -20,6 +20,47 @@ class XWP_Util{
 		return $current_page_title;
 	}//END FUNCTION
 	
+	public static function site_feedback_feedback($type, $value){
+		
+		$result = "";
+		
+		switch($type){
+			case "n":
+				if($value == "empty"){
+					$result = '<span style="color : #D3212D;" class="feedback_feedback">Please provide your name!</span>';
+				}
+				break;
+			case "sub":
+				if($value == "empty"){
+					$result = '<span style="color : #D3212D;" class="feedback_feedback">Please provide a subject!</span>';
+				}
+				break;
+			
+			case "e":
+				if($value == "empty"){
+					$result = '<span style="color : #D3212D;" class="feedback_feedback">Please provide your email!</span>';
+				}
+				break;
+				
+			case "msg":
+				if($value == "empty"){
+					$result = '<span style="color : #D3212D;" class="feedback_feedback">Please provide your messsage!</span>';
+				}
+				break;
+				
+			case "result":
+				if($value == "success"){
+					$result = '<span style="color : #A4C639;" class="feedback_feedback">Feedback Sent!</span>';
+				}else if($value == "fail"){
+					$result = '<span style="color : #D3212D;" class="feedback_feedback">Feedback was not sent. Please try again!</span>';
+				}
+				break;
+		}
+		
+		return $result;
+		
+	}
+	
 	
 	public static function get_the_meta_description_by_id($post_id){
 		$the_post = get_post($post_id); //Gets post ID

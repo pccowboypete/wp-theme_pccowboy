@@ -7,13 +7,13 @@ function collapseNavbar() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
-}
+}//END collapseNavbar
 
 
 // jQuery for fade effect of page on load
 function fadeInPage() {
 	$("#main-container").fadeTo(1000, 1);
-}
+}//END fadeInPage
 
 
 //jQuery for fade effect on section scroll
@@ -23,14 +23,17 @@ function fadeInSection(selector){
 	   function(){
 		   
 		   	var top_of_object = $(this).offset().top;
-			var bottom_of_object = top_of_object + $(this).outerHeight();
 			var top_of_window = $(window).scrollTop();
-			var bottom_of_window = top_of_window + $(window).height();
+			
+			
+			var obj_top_position =  top_of_object - top_of_window;
+			var window_percentage = $(window).height() * 0.75;
+		
 			
 			
 		    //if enough top part of the section is visible
 			//and if enough bottom part of the section is visible
-		    if( top_of_object < (bottom_of_window - 350)){
+		    if( obj_top_position < window_percentage ){
 		    	//if the opacity is 0
 		    	if ($(this).children(".container").css("opacity")==0){
 		    		//show the section
@@ -43,7 +46,9 @@ function fadeInSection(selector){
 	 );
 	
 
-}
+}//END fadeInSection
+
+
 
 
 
@@ -58,7 +63,7 @@ $(document).ready(function(){
 	fadeInPage();
 	fadeInSection(".fade-section");
 	
-});
+});//END $(document).ready
 
 
 $(window).scroll( function(){
@@ -72,6 +77,6 @@ $(window).scroll( function(){
 	
 }
 
-);
+);//END $(window).scroll
 
 

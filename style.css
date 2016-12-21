@@ -102,7 +102,8 @@ header hr {
 @media (max-width: 768px) {
   header hr {
     max-width: 200px;
-    margin: 10px auto 10px;
+    border-top: solid 3px;
+    margin: 5px auto 30px;
   }
 }
 
@@ -309,7 +310,8 @@ section#portfolio hr {
 @media (max-width: 768px) {
   section#portfolio hr {
     max-width: 200px;
-    margin: 10px auto 10px;
+    border-top: solid 3px;
+    margin: 5px auto 30px;
   }
 }
 
@@ -330,6 +332,8 @@ section#portfolio .portfolio-item .portfolio-link {
   max-width: 400px;
   height: auto;
   margin: 0 auto;
+  text-shadow: 0px 0px 10px #ccc;
+  vertical-align: center;
 }
 
 @media (max-width: 768px) {
@@ -365,6 +369,7 @@ section#portfolio .portfolio-item .portfolio-link h3 {
   section#portfolio .portfolio-item .portfolio-link h3 {
     padding: 5px;
     margin: 5px;
+    margin-bottom: 30px;
   }
 }
 
@@ -410,7 +415,8 @@ section#about hr {
 @media (max-width: 768px) {
   section#about hr {
     max-width: 200px;
-    margin: 10px auto 10px;
+    border-top: solid 3px;
+    margin: 5px auto 30px;
   }
 }
 
@@ -559,7 +565,8 @@ section#contact hr {
 @media (max-width: 768px) {
   section#contact hr {
     max-width: 200px;
-    margin: 10px auto 10px;
+    border-top: solid 3px;
+    margin: 5px auto 30px;
   }
 }
 
@@ -594,6 +601,19 @@ section#contact input {
 
 section#contact label {
   color: #fefefe;
+}
+
+.feedback_feedback {
+  margin: 0px 15px 0px 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 3.4em;
+  text-shadow: 0px 0px 15px #BBB;
+}
+
+@media (max-width: 768px) {
+  .feedback_feedback {
+    font-size: 2.9em;
+  }
 }
 
 footer {

@@ -22,7 +22,7 @@ class XWP_PageHTMLHelper{
 				
 			$output .= '<img src="' . $project->thumbnail_medium_wide_url .'" class="img-responsive" alt="">' . "\n";
 				
-			$output .= '<h3>'. $project->title .'</h3>' . "\n";
+			$output .= '<div class="project-title"><h3>'. $project->title .'</h3></div>' . "\n";
 			$output .= '</a>' . "\n";
 			$output .= '</div>' . "\n" . "\n";;
 				
