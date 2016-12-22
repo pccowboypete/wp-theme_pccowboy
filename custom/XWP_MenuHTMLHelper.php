@@ -15,7 +15,8 @@ class XWP_MenuHTMLHelper{
 		
 		
 		foreach ($menu_items as $menu){
-			$result .= '<li><a href="' .  $menu->get_anchor() .'">';
+			
+			$result .= '<li><a href="' .  $menu->url .'">';
 			$result .= $menu->title;
 	
 			$result .= '</li></a>';

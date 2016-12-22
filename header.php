@@ -46,7 +46,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="top-bar">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     
@@ -54,7 +54,7 @@
                         <a href="#page-top"></a>
                     </li>
                     
-                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('primary', 0, false, false)?>
+                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('topbar-home', 0, false, false)?>
                     
                 </ul>
             </div>
@@ -67,7 +67,7 @@
 	
 
     <!-- Header -->
-    <header>
+    <header class="anchor_highlight" id="page-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

@@ -1,5 +1,5 @@
 <!-- Contact Section -->
-    <section id="contact"  class="fade-section">
+    <section id="contact"  class="fade-section anchor_highlight">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

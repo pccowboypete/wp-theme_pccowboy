@@ -1,5 +1,5 @@
  <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="fade-section" >
+    <section id="portfolio" class="fade-section anchor_highlight" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

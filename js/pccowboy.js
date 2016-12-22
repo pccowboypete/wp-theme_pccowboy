@@ -19,7 +19,7 @@ function fadeInPage() {
 //jQuery for fade effect on section scroll
 function fadeInSection(selector){
 	
-	 $(".fade-section").each(
+	 $(selector).each(
 	   function(){
 		   
 		   	var top_of_object = $(this).offset().top;
@@ -48,7 +48,39 @@ function fadeInSection(selector){
 
 }//END fadeInSection
 
-
+//jQuery for anchor highlighting
+function highlightCurrentAnchor(selector){
+	
+	$(selector).each(
+		function(){
+				   
+			var top_of_object = $(this).offset().top;
+			var top_of_window = $(window).scrollTop();
+			
+			var obj_top_position =  top_of_object - top_of_window;
+			
+			var obj_bottom_height = $(this).outerHeight(true);
+			
+			var obj_bottom_position = obj_top_position + obj_bottom_height;
+			
+			var section_id = $(this).attr("id");
+			
+			
+			
+			if( obj_top_position < 60 && obj_bottom_position > 40 ){
+				
+				$("a[href*='#" + section_id + "']" ).parent().addClass("active");
+				
+			    	
+			}
+			else{
+				$("a[href*='#" + section_id + "']" ).parent().removeClass("active");
+			}
+			
+		}		
+			 
+	);
+}
 
 
 
@@ -62,28 +94,25 @@ $(document).ready(function(){
 	//plug the fade effect on window
 	fadeInPage();
 	fadeInSection(".fade-section");
+	highlightCurrentAnchor(".anchor_highlight");
 	
-});//END $(document).ready
-
-
-$(window).scroll( function(){
+	$(window).scroll( function(){
+		
+		//plug collapseNavbar
+		collapseNavbar();
+		
+		//plug fadeEffects on sections
+		fadeInSection(".fade-section");
+		
+		//pluc achor highlight
+		highlightCurrentAnchor(".anchor_highlight");
+		
+		
+		
+	});//END $(window).scroll
 	
-	//plug collapseNavbar
-	collapseNavbar();
-	
-	//plug fadeEffects on sections
-	fadeInSection(".fade-section");
-	
-	
-}
-
-);//END $(window).scroll
-
-
-
-$(
-	function() {
-	  $('a[href*="#"]:not([href="#"])').click(function() {
+	//smooth scrolling
+	$('a[href*="#"]:not([href="#"])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -94,8 +123,25 @@ $(
 	        return false;
 	      }//END if (target.length).....
 	    }//END if (location.pathname.replace(/^\//,'').......
-	  });//END $(a).click
-	}//END Function
-);//END
+	 });//END smooth scrolling
+	
+	
+});//END $(document).ready
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
