@@ -80,3 +80,22 @@ $(window).scroll( function(){
 );//END $(window).scroll
 
 
+
+$(
+	function() {
+	  $('a[href*="#"]:not([href="#"])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html, body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }//END if (target.length).....
+	    }//END if (location.pathname.replace(/^\//,'').......
+	  });//END $(a).click
+	}//END Function
+);//END
+
+

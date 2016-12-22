@@ -5,23 +5,30 @@
 class XWP_MenuHTMLHelper{
 	
 	//get nav menu
-	public static function get_nav_menu($themeLocation, $depth = 0, $echo = true, $withULwrap = true, $paramArgs = NULL){
+	public static function get_nav_menu_for_frontpage($themeLocation, $echo = true){
 		$args = array(
 				'theme_location' => $themeLocation,
-				'container' => false,
-				'echo' => false,
-				'items_wrap' => '%3$s',
-				'depth' => $depth
 		);
+
+		$result = "";
+		$menu_items = XWP_MenuFactory::get_menus($args);
+		
+		
+		foreach ($menu_items as $menu){
+			$result .= '<li><a href="' .  $menu->get_anchor() .'">';
+			$result .= $menu->title;
 	
-		$output =  strip_tags(wp_nav_menu($args),'<a><li>');  //display all primary menu links with only a and li tag
+			$result .= '</li></a>';
+			
+			
+		}
 	
 	
 	
 	
-		if($echo){echo $output;}
+		if($echo){echo $result;}
 	
-		return  $output;
+		return  $result;
 	}//END FUNCTION get_nav_menu
 	
 	

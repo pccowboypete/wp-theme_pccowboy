@@ -2,7 +2,14 @@
 
 class XWP_Menu{
 	protected $title = "";
-	protected  $permalink = "";
+	protected  $url = "";
+	protected $children = array();
+	protected $parent = null;
+	
+	function __construct($title, $url){
+		$this->title = $title;
+		$this->url = $url;
+	}
 	
 	function __get($propertyName){
 		return $this->$propertyName;
@@ -13,8 +20,11 @@ class XWP_Menu{
 	}
 	
 	function get_anchor(){
-		return "#" . $this->title;
+		return '#' . strtolower($this->title);
 	}
+
+	
+	
 	
 }
 

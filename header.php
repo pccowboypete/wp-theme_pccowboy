@@ -35,7 +35,9 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="<?php echo home_url(); ?>#page-top">
                     <span class="site-caption">Welcome to <span class="site-name"><?php bloginfo('name'); ?>!</span></span>
@@ -52,7 +54,7 @@
                         <a href="#page-top"></a>
                     </li>
                     
-                    <?php echo XWP_MenuHTMLHelper::get_nav_menu('primary', 0, false, false)?>
+                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('primary', 0, false, false)?>
                     
                 </ul>
             </div>
