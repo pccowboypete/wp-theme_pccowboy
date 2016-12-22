@@ -50,10 +50,7 @@
 						</table>
 						<br>
 						<br>
-						<p>
-						To see my works. Please visit my <a href="http://pccowboy.x10.bz/projects">projects</a> page.</p>
-						<p>
-						Ciao!! :)
+						
 						</p>
 						
 					</div><!-- END ABOUT WRAPPER -->

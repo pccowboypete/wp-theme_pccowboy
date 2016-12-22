@@ -28,8 +28,8 @@ add_action( 'pre_get_posts', 'mytheme_editor_style' );
 //Register Navigations Menus 
 register_nav_menus(array(
 		'topbar-home' => __('Top Bar Menu - Home'),
-		'projects' => __('Project Links'),
-		'footer' => __('Footer Menu')
+		'primary' => __('Primary Menu Links'),
+		'footer' => __('Footer Menu Links')
 ));
 
 

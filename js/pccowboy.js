@@ -85,8 +85,16 @@ function highlightCurrentAnchor(selector){
 
 
 
+
+
+
 $(document).ready(function(){
 	$(".fade-section").children(".container").css('opacity', '0.0');
+	$('[data-toggle="popover"]').popover();
+	$('[data-toggle="popover"]').popover({
+	    container: 'body'
+	});
+	
 	//plug collapseNavbar
 	collapseNavbar();
 	
@@ -104,7 +112,7 @@ $(document).ready(function(){
 		//plug fadeEffects on sections
 		fadeInSection(".fade-section");
 		
-		//pluc achor highlight
+		//plug achor highlight
 		highlightCurrentAnchor(".anchor_highlight");
 		
 		

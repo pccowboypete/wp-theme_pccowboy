@@ -197,11 +197,15 @@ header .site-header-logo {
   color: white;
 }
 
+.navbar-custom .menu-button {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .navbar-custom .navbar-toggle .icon-bar {
   display: block;
   width: 22px;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 1px;
 }
 
@@ -346,6 +350,51 @@ section#portfolio .portfolio-item {
   right: 0;
 }
 
+section#portfolio .popover {
+  min-width: 350px;
+  background: rgba(10, 10, 10, 0.7);
+  font-family: "Josefin Sans", sans-serif;
+  text-shadow: 0px 0px 3px #ccc;
+  font-size: 3.4em;
+  color: #ddd;
+  /* ###c. Border Shadow compatibility fixes### */
+  -webkit-box-shadow: 0px 0px 8px #fefefe;
+  /* Safari, Chrome and browsers using the Webkit engine */
+  -moz-box-shadow: 0px 0px 8px #fefefe;
+  /* Firefox and other browsers using Mozilla's browser engine */
+  -o-box-shadow: 0px 0px 8px #fefefe;
+  /* Opera */
+  -khtml-box-shadow: 0px 0px 8px #fefefe;
+  /* Konqueror browser */
+  box-shadow: 0px 0px 8px #fefefe;
+  /* Default CSS */
+  /* For IE, not recommended, better none for IE users */
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=145, Strength=15);
+  /* but only certain sides will have shadow
+   * *145 - bottom and right
+   */
+}
+
+@media (max-width: 768px) {
+  section#portfolio .popover {
+    font-size: 2.2em;
+  }
+}
+
+section#portfolio .popover * {
+  background: rgba(10, 10, 10, 0.7);
+}
+
+@media (max-width: 768px) {
+  section#portfolio .popover {
+    display: none !important;
+  }
+}
+
+section#portfolio .popover-title {
+  display: none;
+}
+
 section#portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
@@ -359,6 +408,7 @@ section#portfolio .portfolio-item .portfolio-link {
 @media (max-width: 768px) {
   section#portfolio .portfolio-item .portfolio-link {
     max-width: 250px;
+    text-shadow: 0px 0px 50px #000;
   }
 }
 
@@ -367,7 +417,7 @@ section#portfolio .portfolio-item .portfolio-link:hover {
 }
 
 section#portfolio .section-title {
-  color: #fefefe;
+  color: #efefef;
   margin: 0;
 }
 
@@ -387,7 +437,7 @@ section#portfolio .caption:hover h3 {
 
 @media (max-width: 768px) {
   section#portfolio .caption {
-    text-shadow: 0px 0px 50px #ddd;
+    text-shadow: 0px 0px 50px #000;
   }
 }
 
@@ -402,7 +452,7 @@ section#portfolio .caption-content {
 }
 
 section#portfolio .caption-content h3 {
-  color: #fefefe;
+  color: #efefef;
   font-family: "Sriracha", cursive;
   padding: 10px;
   margin: 10px;
@@ -427,7 +477,7 @@ section#portfolio .caption-content h3 {
 }
 
 section#portfolio hr {
-  color: #fefefe;
+  color: #efefef;
 }
 
 /** #################
@@ -435,7 +485,7 @@ section#portfolio hr {
  */
 section#about {
   padding: 100px 0 100px 0;
-  background-color: #fefefe;
+  background-color: #efefef;
 }
 
 @media (max-width: 768px) {
@@ -478,7 +528,7 @@ section#about .section-title, section#about hr {
 }
 
 .xxAbout p {
-  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 3.4em;
 }
 
@@ -493,15 +543,14 @@ section#about .section-title, section#about hr {
 }
 
 .xxAbout .xxParagraph-intro {
-  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
-  font-family: 'Sahitya', serif;
-  font-size: 3.4em;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4em;
   text-align: justify;
 }
 
 @media (max-width: 768px) {
   .xxAbout .xxParagraph-intro {
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
 }
 
@@ -545,7 +594,7 @@ section#about .section-title, section#about hr {
 }
 
 .xxAbout .xxAbout-table {
-  font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 3.4em;
   border-collapse: collapse;
   border-style: hidden;
@@ -624,7 +673,7 @@ section#contact hr {
 }
 
 section#contact .section-title, section#contact hr {
-  color: #fefefe;
+  color: #efefef;
 }
 
 section#contact input,
@@ -653,7 +702,7 @@ section#contact input {
 }
 
 section#contact label {
-  color: #fefefe;
+  color: #efefef;
 }
 
 .feedback_feedback {
@@ -676,6 +725,13 @@ footer {
 footer h3 {
   margin-bottom: 30px;
   font-family: "Lobster", cursive;
+  font-size: 3.4em;
+}
+
+@media (max-width: 768px) {
+  footer h3 {
+    font-size: 2.9em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -684,13 +740,9 @@ footer h3 {
   }
 }
 
-footer p {
-  font-family: "Sriracha", cursive;
-}
-
 footer .footer-above {
   padding-top: 30px;
-  background-color: #fefefe;
+  background-color: #efefef;
 }
 
 @media (max-width: 768px) {
@@ -700,12 +752,13 @@ footer .footer-above {
 }
 
 footer .footer-above p {
-  font-size: 3.4em;
+  font-size: 4em;
+  font-family: "Sriracha", cursive;
 }
 
 @media (max-width: 768px) {
   footer .footer-above p {
-    font-size: 2.9em;
+    font-size: 2.5em;
   }
 }
 
@@ -724,7 +777,7 @@ footer .footer-below {
   background-color: #233140;
   font-family: "Lobster", cursive;
   font-size: 3.4em;
-  color: #fefefe;
+  color: #efefef;
 }
 
 @media (max-width: 768px) {
