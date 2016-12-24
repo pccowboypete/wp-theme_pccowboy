@@ -1,0 +1,38 @@
+section#contact{
+	@include sectionStyle;
+	background-color : $color2;
+
+	.section-title, hr{
+		color: $color1;
+	}
+
+}
+
+
+section#contact input,
+section#contact textarea{
+	color : $color2;
+	font-family: $fontFamily2;
+	  @include FontSize3;
+	font-weight: 700;
+
+
+}
+section#contact input{
+	height: 40px;
+	@include screen-xs{
+		height:32px;
+	}
+}
+
+
+
+section#contact label{
+	color : $color1;
+}
+.feedback_feedback{
+	margin : 0px 15px 0px 15px;
+	font-family: $fontFamily2;
+	@include FontSize2;
+	text-shadow: 0px 0px 15px #BBB;
+}

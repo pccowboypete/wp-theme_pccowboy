@@ -1,0 +1,121 @@
+section#portfolio{
+	@include sectionStyle;
+
+	background-color : #010101;
+
+	.portfolio-item {
+	  margin: 0 0 15px;
+	  right: 0;
+
+
+
+	}
+
+	.popover{
+        min-width:350px;
+				background: rgba(10, 10, 10, 0.7);
+				font-family: $fontFamily2;
+				text-shadow: 0px 0px 3px #ccc;
+				@include FontSize3;
+				color : $color5;
+
+				@include BorderShadow1;
+
+				*{
+					background: rgba(10, 10, 10, 0.7);
+				}
+
+				@include screen-xs{
+					display : none!important;
+				}
+
+
+    }
+
+		.popover-title {
+			display : none;
+		}
+
+	.portfolio-item .portfolio-link {
+	  display: block;
+	  position: relative;
+	  max-width: 400px;
+		height: auto;
+	  margin: 0 auto;
+		text-shadow: 0px 0px 50px #000;
+		vertical-align: center;
+
+		@include screen-xs{
+			max-width: 250px;
+			text-shadow: 0px 0px 50px #000;
+		}
+
+		&:hover{
+			text-decoration: none;
+		}
+
+
+	}//END .portfolio-item .portfolio-link
+
+	.section-title{
+		color : $color1;
+	  margin: 0;
+	}
+
+	.caption {
+			background: rgba(10, 10, 10, 0.4);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+
+			&:hover {
+				h3{
+					text-shadow: 0px 0px 50px #ddd;
+					transition: text-shadow ease 0.5s;
+					-webkit-transition: text-shadow ease 0.5s;
+					-moz-transition: text-shadow ease 0.5s;
+				}
+			}
+
+			@include screen-xs{
+				text-shadow: 0px 0px 50px #000;
+			}
+
+		}//END .caption
+
+		.caption-content {
+			position: absolute;
+			width: 100%;
+			height: 20px;
+
+			text-align: center;
+			top: 40%;
+			margin-top: -12px;
+			color: white;
+
+			h3{
+				 color : $color1;
+				 font-family: $fontFamily3;
+				 padding : 10px;
+				 margin: 10px;
+				 @include FontSize1;
+
+				 transition: text-shadow ease 0.5s;
+				 -webkit-transition: text-shadow ease 0.5s;
+				 -moz-transition: text-shadow ease 0.5s;
+
+				 @include screen-xs{
+					 padding : 5px;
+					 margin: 5px;
+					 margin-bottom : 30px;
+				 }
+			 }
+
+		}//END .caption-content
+
+		hr{
+		 color : $color1;
+
+	 }
+
+}

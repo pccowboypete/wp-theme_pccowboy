@@ -1,6 +1,6 @@
 <?php
 
-require_once 'custom/objects.php';
+require_once 'XWP/XWP_Includes.php';
 
 
 function mytheme_resources(){

@@ -1,0 +1,102 @@
+/** #################
+ * 13.0 - About
+ */
+
+ section#about{
+   @include sectionStyle;
+   background-color: $color1;
+
+   .section-title, hr{
+     color : $color2;
+   }
+ }
+
+.xxAbout p {
+  font-family: $fontFamily2;
+  @include FontSize3;
+
+
+
+}
+
+.xxAbout .xxAbout-wrapper {
+  padding: 20px;
+}
+
+.xxAbout .xxParagraph-intro {
+
+  font-family: $fontFamily2;
+    @include FontSize4;
+  text-align: justify;
+
+
+}
+
+.xxAbout .xxAboutPic {
+  width: 170px;
+  float: left;
+  margin: 10px;
+  margin-left: 0px;
+  margin-top: 0px;
+  /* ###c. Border Shadow compatibility fixes### */
+  -webkit-box-shadow: 0px 0px 8px #000000;
+  /* Safari, Chrome and browsers using the Webkit engine */
+  -moz-box-shadow: 0px 0px 8px #000000;
+  /* Firefox and other browsers using Mozilla's browser engine */
+  -o-box-shadow: 0px 0px 8px #000000;
+  /* Opera */
+  -khtml-box-shadow: 0px 0px 8px #000000;
+  /* Konqueror browser */
+  box-shadow: 0px 0px 8px #000000;
+  /* Default CSS */
+  /* For IE, not recommended, better none for IE users */
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=15);
+  /* but only certain sides will have shadow
+	* *145 - bottom and right
+	*/
+  @include screen-xs{
+    width: 110px;
+  }
+}
+
+.xxAbout .xxAbout-name {
+  font-family: 'Sriracha', cursive;
+}
+
+.xxAbout .xxAbout-alias {
+  font-family: 'Kaushan Script', cursive;
+  font-weight: bold;
+}
+
+.xxAbout .xxAbout-table {
+  font-family: $fontFamily2;
+    @include FontSize3;
+  border-collapse: collapse;
+  border-style: hidden;
+  margin-top: 60px;
+
+  @include screen-xs{
+    margin-top: 20px;
+
+  }
+}
+
+.xxAbout .xxAbout-table thead,
+.xxAbout .xxAbout-table tr td,
+.xxAbout .xxAbout-table tr th {
+  /* set table border styling */
+  border: 1px solid #555;
+  padding: 10px;
+}
+
+.xxAbout .xxAbout-table th {
+  text-align: center;
+}
+
+/**
+ * END 13.0 - About
+ *
+ *
+ *
+ *
+ */

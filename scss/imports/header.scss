@@ -1,0 +1,51 @@
+/** #################
+ *  Header
+ */
+
+
+header {
+  @include sectionStyle;
+  text-align: center;
+  background: #222;
+  color: white;
+  background-image: url('imgs/head.jpg');
+  padding : 330px 0px 40px 0px;
+
+  @include screen-xs{
+    padding : 80px 0px 15px 0px;
+    margin-top: 0;
+    margin-bottom : 0;
+  }
+
+  img.site-header-logo{
+    display: block;
+    margin: 0 auto 15px;
+
+    @include screen-xs{
+      width: 140px;
+      height: auto;
+      margin: 0 auto 5px;
+    }
+  }
+
+
+
+  .intro-text .skills {
+    font-family:  $fontFamily3;
+    @include FontSize4;
+    font-weight: 300;
+    text-shadow: 0px 0px 40px #000;
+
+
+  }
+
+
+
+  .site-header-logo{
+  	max-width : 300px;
+  	height : auto;
+
+  }
+
+
+}

@@ -1,4 +1,24 @@
 <?php 
+/**
+ * Factory Class for XWP_Page
+ * 
+ *
+ *
+ * @author 		PcCowboy
+ * @package 	XWP/factories
+ * @version     1
+ * 
+ * @method		array(XWP_Page)				get_pages($params) returns the pages		
+ * 
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
+?>
+
+<?php 
 
 
 

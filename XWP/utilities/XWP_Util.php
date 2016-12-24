@@ -1,4 +1,23 @@
 <?php 
+/**
+ * Utility Class for general purpose
+ * 
+ *
+ *
+ * @author 		PcCowboy
+ * @package 	XWP/utilies
+ * @version     1
+ *		
+ * 
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
+?>
+
+<?php 
 
 
 

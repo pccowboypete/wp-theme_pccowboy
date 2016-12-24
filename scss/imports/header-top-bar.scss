@@ -1,0 +1,142 @@
+/** #################
+  * 3.0 - Fixed Top Bar
+  */
+
+  .navbar-custom{
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: black;
+    outline: none;
+
+
+
+    .navbar-toggle {
+      color: white;
+      background-color: #ddd;
+        @include FontSize3;
+    }
+
+    .navbar-toggle:focus,
+    .navbar-toggle:active {
+      outline: none;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+    }
+
+    .navbar-brand .site-caption{
+      font-family: $fontFamily4;
+      @include FontSize1;
+    }
+
+
+    .navbar-brand:focus {
+      outline: none;
+    }
+
+    a {
+      color: white;
+
+    }
+
+    .menu-button{
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .navbar-toggle .icon-bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 1px;
+    }
+
+    .nav li a:link,
+    .nav li a:visited,
+     {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+
+      font-family: $fontFamily2;
+      font-weight: 700;
+      @include FontSize2;
+    }
+
+    .nav li a:hover {
+      color: rgba(255, 255, 255, 0.8);
+      outline: none;
+      background-color: #555;
+    }
+
+
+    .nav li a:focus,
+    .nav li a:active {
+      outline: none;
+      background-color: transparent;
+    }
+
+    .nav li.active {
+      background-color: #555 ;
+      -webkit-transition: background 0.5s ease;
+      -moz-transition: background 0.5s ease;
+      transition: background 0.5s ease;
+    }
+
+    .nav li.active a {
+      background-color: #555 ;
+    }
+
+
+    .nav li.active a:hover {
+      color: white;
+      background-color: #555;
+    }
+
+    .menu-button{
+
+      @include FontSize3;
+    }
+
+
+
+
+  }
+
+  .navbar-custom{
+    @include screen-xs-min{
+      padding: 20px 0;
+      border-bottom: none;
+      letter-spacing: 1px;
+      background: transparent;
+      -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+  }
+
+  .navbar-custom.top-nav-collapse {
+    @include screen-xs-min{
+      padding: 0;
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    @include screen-xs{
+      padding: 0;
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+  }
+
+
+
+/**
+ * END Fixed Top Bar
+ *
+ *
+ *
+ *
+ */

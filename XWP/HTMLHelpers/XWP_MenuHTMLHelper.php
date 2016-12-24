@@ -11,13 +11,13 @@ class XWP_MenuHTMLHelper{
 		);
 
 		$result = "";
-		$menu_items = XWP_MenuFactory::get_menus($args);
+		$links = XWP_MenuFactory::get_menus($args)->get_links();
 		
 		
-		foreach ($menu_items as $menu){
+		foreach ($links as $link){
 			
-			$result .= '<li><a href="' .  $menu->url .'">';
-			$result .= $menu->title;
+			$result .= '<li><a href="' .  $link->url .'">';
+			$result .= $link->title;
 	
 			$result .= '</li></a>';
 			

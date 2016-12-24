@@ -1,0 +1,65 @@
+footer {
+
+
+  color: $color2;
+
+  h3 {
+    margin-bottom: 30px;
+    font-family:  $fontFamily4;
+    @include FontSize2;
+    @include screen-xs{
+      margin-bottom: 8px;
+    }
+  }
+
+
+  .footer-above {
+    padding-top: 30px;
+    background-color: $color1;
+    @include screen-xs{
+      padding-top: 10px;
+    }
+    p{
+      	@include FontSize4;
+        font-family:  $fontFamily3;
+    }
+  }
+
+  .footer-col {
+    margin-bottom: 50px;
+    @include screen-xs{
+      margin-bottom: 15px;
+    }
+  }
+
+  .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+
+    font-family:  $fontFamily4;
+      @include FontSize3;
+    color: $color1;
+
+    @include screen-xs{
+      margin-bottom: 10px;
+    }
+  }
+
+  .btn-outline {
+    color: $color2;
+      @include FontSize3;
+    border: solid 2px $color2;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+  }
+  .btn-outline:hover,
+  .btn-outline:focus,
+  .btn-outline:active,
+  .btn-outline.active {
+    color: #0048BA;
+    background: white;
+    border: solid 2px $color2;
+  }
+
+}
