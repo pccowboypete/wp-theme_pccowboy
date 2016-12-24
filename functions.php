@@ -1,6 +1,11 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	//silence is golden :D
+	exit; // Exit if accessed directly
+}
 
-require_once 'XWP/XWP_Includes.php';
+
+require_once 'XWP/XWP_SetUp.php';
 
 
 function mytheme_resources(){
