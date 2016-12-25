@@ -6,7 +6,7 @@ footer {
   h3 {
     margin-bottom: 30px;
     font-family:  $fontFamily4;
-    @include FontSize2;
+    @include FontSize2rem;
     @include screen-xs{
       margin-bottom: 8px;
     }
@@ -20,7 +20,7 @@ footer {
       padding-top: 10px;
     }
     p{
-      	@include FontSize4;
+      	@include FontSize2rem;
         font-family:  $fontFamily3;
     }
   }
@@ -33,11 +33,11 @@ footer {
   }
 
   .footer-below {
-    padding: 25px 0;
+    padding: 20px 0 15px;
     background-color: #233140;
 
     font-family:  $fontFamily4;
-      @include FontSize3;
+      @include FontSize2rem;
     color: $color1;
 
     @include screen-xs{
@@ -47,7 +47,7 @@ footer {
 
   .btn-outline {
     color: $color2;
-      @include FontSize3;
+      @include FontSize3rem;
     border: solid 2px $color2;
     background: transparent;
     transition: all 0.3s ease-in-out;

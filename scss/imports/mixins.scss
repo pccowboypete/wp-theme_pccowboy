@@ -57,58 +57,117 @@
  *
  */
 
+ @mixin font-size($sizeValue: 1.6) {
+   font-size: ($sizeValue * 10) + px;
+   font-size: $sizeValue + rem;
+ }
+
+ @mixin FontSize1rem{
+    @include font-size(1);
+
+ }
+
+ @mixin FontSize1_2rem{
+   @include font-size(1.2);
+
+ }
+
+ @mixin FontSize1_4rem{
+   @include font-size(1.4);
+
+ }
+
+ @mixin FontSize1_6rem{
+   @include font-size(1.6);
+
+ }
+
+ @mixin FontSize1_8rem{
+   @include font-size(1.8);
+
+ }
+
+ @mixin FontSize2rem{
+   @include font-size(2);
+
+ }
 
 
-  @mixin FontSize1{
-    font-size: 1.6em;
-    @include screen-xs{
-      font-size: 1em;
-    }
-  }
+ @mixin FontSize2_2rem{
+   @include font-size(2.2);
 
-  @mixin FontSize2{
-    font-size: 3.4em;
-    @include screen-xs{
-      font-size: 2.9em;
-    }
-  }
+ }
 
-  @mixin FontSize3{
-    font-size: 3.4em;
-    @include screen-xs{
-      font-size: 2.2em;
-    }
-  }
+ @mixin FontSize2_4rem{
+   @include font-size(2.4);
 
-  @mixin FontSize4{
-    font-size: 4em;
-    @include screen-xs{
-      font-size: 2.5em;
-    }
-  }
+ }
 
-  @mixin FontSize5{
-    font-size: 8em;
-    @include screen-xs{
-      font-size: 4em;
-    }
-  }
+ @mixin FontSize2_6rem{
+   @include font-size(2.6);
+
+ }
+
+ @mixin FontSize2_8rem{
+   @include font-size(2.8);
+
+ }
+
+ @mixin FontSize3rem{
+   @include font-size(3);
+
+ }
 
 
+ @mixin FontSize3_2rem{
+   @include font-size(3.2);
 
+ }
 
+ @mixin FontSize3_4rem{
+   @include font-size(3.4);
 
+ }
 
+ @mixin FontSize3_6rem{
+   @include font-size(3.6);
 
+ }
 
+ @mixin FontSize3_8rem{
+   @include font-size(3.8);
 
+ }
 
+ @mixin FontSize4rem{
+   @include font-size(4);
 
+ }
 
+ @mixin FontSize4_2rem{
+   @include font-size(4.2);
 
+ }
 
+ @mixin FontSize4_4rem{
+   @include font-size(4.4);
 
+ }
 
+ @mixin FontSize4_6rem{
+   @include font-size(4.6);
+
+ }
+
+ @mixin FontSize4_8rem{
+   @include font-size(4.8);
+
+ }
+
+ @mixin FontSize5rem{
+   @include font-size(5);
+
+ }
 
 
 
@@ -121,7 +180,7 @@
 
      .section-title{
       font-family: $fontFamily2;
-   		@include FontSize5;
+   		@include FontSize4rem;
    	  margin: 0;
       font-weight: 900;
 

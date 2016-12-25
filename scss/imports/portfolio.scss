@@ -16,7 +16,7 @@ section#portfolio{
 				background: rgba(10, 10, 10, 0.7);
 				font-family: $fontFamily2;
 				text-shadow: 0px 0px 3px #ccc;
-				@include FontSize3;
+				@include FontSize2rem;
 				color : $color5;
 
 				@include BorderShadow1;
@@ -44,6 +44,7 @@ section#portfolio{
 	  margin: 0 auto;
 		text-shadow: 0px 0px 50px #000;
 		vertical-align: center;
+		border : 2px solid #555;
 
 		@include screen-xs{
 			max-width: 250px;
@@ -98,7 +99,7 @@ section#portfolio{
 				 font-family: $fontFamily3;
 				 padding : 10px;
 				 margin: 10px;
-				 @include FontSize1;
+				 @include FontSize2_2rem;
 
 				 transition: text-shadow ease 0.5s;
 				 -webkit-transition: text-shadow ease 0.5s;

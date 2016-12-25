@@ -13,7 +13,7 @@
 
 .xxAbout p {
   font-family: $fontFamily2;
-  @include FontSize3;
+  @include FontSize1_6rem;
 
 
 
@@ -26,7 +26,7 @@
 .xxAbout .xxParagraph-intro {
 
   font-family: $fontFamily2;
-    @include FontSize4;
+    @include FontSize3rem;
   text-align: justify;
 
 
@@ -70,7 +70,7 @@
 
 .xxAbout .xxAbout-table {
   font-family: $fontFamily2;
-    @include FontSize3;
+    @include FontSize2_4rem;
   border-collapse: collapse;
   border-style: hidden;
   margin-top: 60px;

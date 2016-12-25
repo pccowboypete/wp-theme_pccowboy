@@ -19,7 +19,7 @@
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sriracha" rel="stylesheet"> <!-- font 2 and 3 -->
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> <!-- font 4 -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Kaushan+Script" rel="stylesheet"> <!-- font 4 -->
 	
     
     <title><?php bloginfo('name'); ?><?php echo ' - ';single_post_title(); single_cat_title(); ?></title>
@@ -35,9 +35,7 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle menu-button" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="<?php echo home_url(); ?>#page-top">
                     <span class="site-caption">Welcome to <span class="site-name"><?php bloginfo('name'); ?>!</span></span>
@@ -46,7 +44,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="top-bar">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     
@@ -54,7 +52,7 @@
                         <a href="#page-top"></a>
                     </li>
                     
-                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('topbar-home', 0, false, false)?>
+                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('primary', 0, false, false)?>
                     
                 </ul>
             </div>
@@ -67,7 +65,7 @@
 	
 
     <!-- Header -->
-    <header class="anchor_highlight" id="page-top">
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

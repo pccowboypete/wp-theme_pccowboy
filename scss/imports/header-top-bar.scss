@@ -9,12 +9,17 @@
     background-color: black;
     outline: none;
 
+    @include screen-xs{
+      background-color:  rgba(0, 0, 0, 0.8);
+    }
+
+
 
 
     .navbar-toggle {
       color: white;
       background-color: #ddd;
-        @include FontSize3;
+        @include FontSize3rem;
     }
 
     .navbar-toggle:focus,
@@ -28,7 +33,7 @@
 
     .navbar-brand .site-caption{
       font-family: $fontFamily4;
-      @include FontSize1;
+      @include FontSize3rem;
     }
 
 
@@ -44,24 +49,20 @@
     .menu-button{
       background: rgba(0, 0, 0, 0.8);
     }
-    .navbar-toggle .icon-bar {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background-color: #fff;
-      border-radius: 1px;
-    }
 
+    .nav a{
+      @include FontSize2_6rem;
+      font-family: $fontFamily2;
+    }
     .nav li a:link,
-    .nav li a:visited,
-     {
+    .nav li a:visited{
       -webkit-transition: background 0.3s ease-in-out;
       -moz-transition: background 0.3s ease-in-out;
       transition: background 0.3s ease-in-out;
 
-      font-family: $fontFamily2;
+
       font-weight: 700;
-      @include FontSize2;
+
     }
 
     .nav li a:hover {
@@ -95,8 +96,10 @@
     }
 
     .menu-button{
-
-      @include FontSize3;
+      @include FontSize2_4rem;
+      background-color: #ddd;
+      color : #000;
+      padding : 3px 15px 3px 15px;
     }
 
 
@@ -117,17 +120,11 @@
   }
 
   .navbar-custom.top-nav-collapse {
-    @include screen-xs-min{
-      padding: 0;
-      background: rgba(0, 0, 0, 0.8);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
-    @include screen-xs{
-      padding: 0;
-      background: rgba(0, 0, 0, 0.8);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
+
 
   }
 

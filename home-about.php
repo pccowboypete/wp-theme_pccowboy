@@ -23,7 +23,7 @@
 								<th>Web Development</th>
 								<td>
 									<ul>
-									 	<li>PHP and MySQL, Wordpress</li>
+									 	<li>PHP and MySQL, Wordpress, WooCommerce</li>
 									 	<li>HTML/5, CSS3, SASS, JavaScript, jQuery, Bootstrap </li>
 									 	<li>Responsive Web Design</li>
 									 	<li>Proficient knowledge of web design and development  best practices and browser compatibility fixes.</li>
