@@ -54,13 +54,12 @@
       @include FontSize2_6rem;
       font-family: $fontFamily2;
     }
+    
     .nav li a:link,
     .nav li a:visited{
       -webkit-transition: background 0.3s ease-in-out;
       -moz-transition: background 0.3s ease-in-out;
       transition: background 0.3s ease-in-out;
-
-
       font-weight: 700;
 
     }
