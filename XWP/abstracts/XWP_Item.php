@@ -48,7 +48,9 @@ abstract class  XWP_Item{
 	protected $featured_image_lg_square_url = "";
 	protected $featured_image_lg_wide_url = "";
 	
-	protected $featured_image = "";
+	protected $banner_image_url = "";
+	
+	protected $featured_image_origsize_url = "";
 
 
 	function __construct(){

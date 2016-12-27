@@ -61,9 +61,19 @@ function pccowboy_theme_setup(){
 	add_theme_support('post-thumbnails');
 	
 	//add image size
-	add_image_size('small-thumbnail', 180, 120, true);
-	add_image_size('medium-thumbnail-wide', 400, 300, true);
-	add_image_size('banner-image', 920, 210, array('left','top'));
+	add_image_size('featured_image_xs_wide', 200, 120, true);
+	add_image_size('featured_image_xs_square', 200, 150, true);
+	
+	add_image_size('featured_image_sm_wide', 400, 240, true);
+	add_image_size('featured_image_sm_square', 400, 300, true);
+	
+	add_image_size('featured_image_md_wide', 800, 480, true);
+	add_image_size('featured_image_md_square', 800, 600, true);
+	
+	add_image_size('featured_image_lg_wide', 1200, 120, true);
+	add_image_size('featured_image_lg_square', 1200, 900, true);
+	
+	add_image_size('banner_image', 920, 240, array('left','top'));
 	
 }
 

@@ -31,7 +31,7 @@ class XWP_PageHTMLHelper{
 					$output .= '<i class="fa fa-3x"><h3>'. $project->title .'</h3></i>';
 				$output .= '</div>';
 			$output .= '</div>';
-			$output .= '<img src="' . $project->thumbnail_medium_wide_url .'" class="img-responsive" alt="">' . "\n";
+			$output .= '<img src="' . $project->featured_image_sm_square_url .'" class="img-responsive" alt="">' . "\n";
 				
 			
 			$output .= '</a>' . "\n";

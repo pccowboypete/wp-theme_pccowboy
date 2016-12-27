@@ -46,6 +46,18 @@ section#portfolio{
 		vertical-align: center;
 		border : 2px solid #555;
 
+		/*###Border Shadow compatibility fixes###*/
+		-webkit-box-shadow: 0px 0px 10px #fff; /* Safari, Chrome and browsers using the Webkit engine */
+		-moz-box-shadow: 0px 0px 10px #fff; /* Firefox and other browsers using Mozilla's browser engine */
+		-o-box-shadow: 0px 0px 10px #fff; /* Opera */
+		-khtml-box-shadow: 0px 0px 10px #fff; /*Konqueror browser*/
+		box-shadow: 0px 0px 10px #fff; /*default CSS*/
+		/* For IE, not recommended, better none for IE users*/
+		filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=145, Strength=15);
+		/* but only certain sides will have shadow
+		* *145 - bottom and right
+		*/
+
 		@include screen-xs{
 			max-width: 250px;
 			text-shadow: 0px 0px 50px #000;
@@ -90,7 +102,7 @@ section#portfolio{
 			height: 20px;
 
 			text-align: center;
-			top: 40%;
+			bottom : 40px;
 			margin-top: -12px;
 			color: white;
 

@@ -65,10 +65,23 @@ class XWP_PageFactory{
 				$tempPage->title = get_the_title();
 				$tempPage->excerpt = get_the_excerpt();
 				$tempPage->content = get_the_content();
-				$tempPage->thumbnail_small_url = get_the_post_thumbnail_url($tempPage->pageID,'small-thumbnail');
-				$tempPage->thumbnail_medium_wide_url = get_the_post_thumbnail_url($tempPage->pageID,'medium-thumbnail-wide');
-				$tempPage->thumbnail_banner_url = get_the_post_thumbnail_url($tempPage->pageID, 'banner-image');
-				$tempPage->thumbnail_fullsize_url = get_the_post_thumbnail_url();
+				$tempPage->featured_image_xs_square_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_xs_square');
+				$tempPage->featured_image_xs_wide_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_xs_wide');
+				
+				$tempPage->featured_image_sm_square_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_sm_square');
+				$tempPage->featured_image_sm_wide_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_sm_wide');
+				
+				$tempPage->featured_image_md_square_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_md_square');
+				$tempPage->featured_image_xs_wide_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_md_wide');
+				
+				$tempPage->featured_image_md_square_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_lg_square');
+				$tempPage->featured_image_md_wide_url = get_the_post_thumbnail_url($tempPage->pageID,'featured_image_lg_wide');
+				
+				
+				$tempPage->banner_image_url = get_the_post_thumbnail_url($tempPage->pageID, 'banner_image');
+				
+				$tempPage->featured_image_origsize_url = get_the_post_thumbnail_url();
+				
 	
 					
 	
