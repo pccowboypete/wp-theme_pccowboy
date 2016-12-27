@@ -16,7 +16,7 @@ class XWP_MenuHTMLHelper{
 		
 		foreach ($links as $link){
 			
-			$result .= '<li><a>';
+			$result .= '<li><a >';
 			$result .= $link->title;
 	
 			$result .= '</li></a>';

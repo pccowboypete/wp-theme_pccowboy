@@ -52,7 +52,7 @@
                         <a href="#page-top"></a>
                     </li>
                     
-                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('primary', 0, false, false)?>
+                    <?php echo XWP_MenuHTMLHelper::get_nav_menu_for_frontpage('topbar-home', 0, false, false)?>
                     
                 </ul>
             </div>
